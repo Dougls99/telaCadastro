@@ -25,7 +25,7 @@ export default function App() {
       <TextInput secureTextEntry={true} placeholder='Senha' style={styles.textInput} onChangeText={text=>setSenha(text)} />
 
       <TouchableOpacity style={styles.btnCadastro} onPress={()=>cadastro()} >
-        <Text>Cadastrar!</Text>
+        <Text style={{color: 'white', textAlign:'center'}} >Cadastrar!</Text>
       </TouchableOpacity>
 
     </View>
@@ -46,12 +46,13 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     borderRadius: 20,
     padding: 10,
-    marginTop: 35    
+    margin: 10    
   },
   btnCadastro: {
     width: '100%',
     height: 40,
     backgroundColor: 'red',
     borderRadius: 20,
+    justifyContent: 'center'
   }
 });
